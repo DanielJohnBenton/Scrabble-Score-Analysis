@@ -2,7 +2,7 @@
 
 let _fs = require("fs");
 
-let _source = "sources/gft.txt";
+let _source = "sources/ttm.txt";
 
 let _points = {
 	"_E": 1, "_A": 1, "_I": 1, "_O": 1, "_N": 1, "_R": 1, "_T": 1, "_L": 1, "_S": 1, "_U": 1,
@@ -291,7 +291,7 @@ for(let i = 0, n = uniqueWords.length; i < n; i++)
 	file += uniqueWords[i].word +"\t"+ uniqueWords[i].score +"\r\n";
 }
 
-let sourceName = (_source.Contains("/") ? _source.split("/").pop() : _source);
+let sourceName = "output/"+ (_source.Contains("/") ? _source.split("/").pop() : _source);
 
 WriteFile(sourceName +"_result.txt", file);
 
