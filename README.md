@@ -20,6 +20,8 @@ To prove this, below I plot _only_ unique words against words from a dictionary 
 
 ![graph](images/unique_words_dictionary.png)
 
+Additionally, the most common word score is 11 or 12 for unique words only, whereas it is about half that (6) when identical words can be counted multiple times.
+
 # Acknowledgements
 * [bostic](https://svnweb.freebsd.org/csrg/share/dict/)
 * [Paolo Bergantino](http://stackoverflow.com/a/772929)
