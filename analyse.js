@@ -2,7 +2,7 @@
 
 let _fs = require("fs");
 
-let _source = "sources/ttm.txt";
+let _source = "sources/kjb.txt";
 
 let _points = {
 	"_E": 1, "_A": 1, "_I": 1, "_O": 1, "_N": 1, "_R": 1, "_T": 1, "_L": 1, "_S": 1, "_U": 1,
@@ -307,6 +307,19 @@ for(let i = 0, n = udist.length; i < n; i++)
 }
 
 WriteFile(sourceName + "_unique_distribution.txt", file);
+
+// === UNIQUE WORDS PER SCORE PERCENTAGES DISTRIBUTION ===
+
+file = "";
+
+let uPercDist = PercentageDistribution(udist);
+
+for(let i = 0, n = uPercDist.length; i < n; i++)
+{
+	file += uPercDist[i].score +"\t"+ ((uPercDist[i].percentage == 0) ? "" : uPercDist[i].percentage) +"\r\n";
+}
+
+WriteFile(sourceName +"_unique_percentage_distribution.txt", file);
 
 // === NON-UNIQUE WORDS PER SCORE DISTRIBUTION ===
 

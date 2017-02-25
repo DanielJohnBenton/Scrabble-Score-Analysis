@@ -15,6 +15,11 @@ I plotted the percentage of words with each scrabble score for the following pub
 
 It seems for a sufficiently large/varied text, it will follow quite a similar pattern.
 
+This pattern appears to be tied to frequency of identical words as much as the distribution of scores throughout the English language.
+To prove this, below I plot _only_ unique words against words from a dictionary wordlist. The shape is much simpler.
+
+![graph](images/unique_words_dictionary.png)
+
 # Acknowledgements
 * [bostic](https://svnweb.freebsd.org/csrg/share/dict/)
 * [Paolo Bergantino](http://stackoverflow.com/a/772929)
